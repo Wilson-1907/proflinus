@@ -6,7 +6,7 @@ import { PageIntro } from "@/components/layout/PageIntro";
 export const metadata: Metadata = {
   title: "Impact",
   description:
-    "Documented institutional initiatives around Prof. Gitonga’s Vice-Chancellorship, including the 2026 China visit, Career Week and first-year address.",
+    "Documented institutional initiatives around Prof. Gitonga’s Vice-Chancellorship, including the 2026 China visit and first-year address.",
 };
 
 export default function ImpactPage() {

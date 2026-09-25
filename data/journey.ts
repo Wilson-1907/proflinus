@@ -153,7 +153,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Continuing institutional transformation",
     institution: "Karatina University",
     significance:
-      "Documented work in this period includes the China / Hikvision engagement, Career Week, the first-year address on discipline and persistence, and continued emphasis on computing, research, partnerships and student development — framed as institutional, not personal, achievement.",
+      "Documented work in this period includes the China / Hikvision engagement, the first-year address on discipline and persistence, and continued emphasis on computing, research, partnerships and student development — framed as institutional, not personal, achievement.",
     source: sources.karuChina,
     photo: "/images/first-year-address.png",
     category: "vc",

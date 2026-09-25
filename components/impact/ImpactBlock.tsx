@@ -147,16 +147,6 @@ export function ImpactBlock() {
         </div>
       </section>
 
-      <section className="bg-white py-24">
-        <div className="section-pad mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Career week / employability"
-            title="Education → Experience → Industry → Opportunity"
-            lede="The 14th Annual Career Week, 21–22 May 2026, under the theme “Bridging the Gap.” Photographs of that week are not part of this archive."
-          />
-        </div>
-      </section>
-
       <section className="bg-ivory py-24">
         <div className="section-pad mx-auto grid max-w-7xl gap-16 md:grid-cols-2">
           <div>

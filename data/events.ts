@@ -70,17 +70,6 @@ export const vcEvents: EventRecord[] = [
     temporalStatus: "historical",
   },
   {
-    id: "career-week-2026",
-    date: "2026-05-21",
-    title: "14th Annual Career Week",
-    summary:
-      "Hosted by the Directorate of Career Services under the theme “Bridging the Gap: Strengthening Career Pathways through Education–Industry Linkages.” The Vice-Chancellor emphasised early career exposure, mentorship and informed decision-making.",
-    location: "Student Centre, Karatina University",
-    source: sources.karuCareerWeek,
-    category: "students",
-    temporalStatus: "historical",
-  },
-  {
     id: "first-years-2026",
     date: "2026-08-27",
     title: "First-year address — Architect of the Future",

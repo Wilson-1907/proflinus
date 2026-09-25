@@ -57,17 +57,6 @@ export const transformationMap = [
     ],
   },
   {
-    id: "career",
-    title: "Career & Employability",
-    items: [
-      {
-        text: "The 14th Annual Career Week (May 2026) focused on education–industry linkages, internships, entrepreneurship and digital literacy. The Vice-Chancellor emphasised early career exposure and mentorship.",
-        source: sources.karuCareerWeek,
-        status: "historical" as const,
-      },
-    ],
-  },
-  {
     id: "infrastructure",
     title: "Infrastructure",
     items: [
@@ -136,7 +125,6 @@ export const studentThemes = [
   { word: "Persistence", source: sources.karuArchitect },
   { word: "Integrity", source: sources.karuArchitect },
   { word: "Responsibility", source: sources.karuArchitect },
-  { word: "Mentorship", source: sources.karuCareerWeek },
   { word: "Academic excellence", source: sources.karuArchitect },
-  { word: "Innovation", source: sources.karuCareerWeek },
+  { word: "Innovation", source: sources.karuArchitect },
 ];

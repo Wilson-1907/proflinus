@@ -73,14 +73,6 @@ export const sources = {
     level: 1,
     type: "news",
   },
-  karuCareerWeek: {
-    id: "karu-career-week",
-    name: "Karatina University — 14th Annual Career Week",
-    url: "https://karu.ac.ke/karatina-university-strengthens-career-pathways-during-14th-annual-career-week/",
-    accessed: "2026-09-25",
-    level: 1,
-    type: "news",
-  },
   icipeDissertation: {
     id: "icipe-dissertation",
     name: "ICIPE Hive — PhD dissertation record",

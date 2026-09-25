@@ -107,13 +107,6 @@ export const archiveDocuments = [
     url: sources.karuArchitect.url,
   },
   {
-    title: "14th Annual Career Week",
-    date: "2026-05-21",
-    type: "Institutional news",
-    institution: "Karatina University",
-    url: sources.karuCareerWeek.url,
-  },
-  {
     title: "Faculty of Computer Science and Informatics session",
     date: "2025-10",
     type: "Institutional news",
