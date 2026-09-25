@@ -1,0 +1,161 @@
+import type { JourneyMilestone } from "./types";
+import { sources } from "./sources";
+
+export const journeyMilestones: JourneyMilestone[] = [
+  {
+    id: "bed-1986",
+    period: "1986–1989",
+    startYear: 1986,
+    endYear: 1989,
+    title: "BEd (Science), Second Class Honours, Upper Division",
+    institution: "Kenyatta University",
+    significance:
+      "Undergraduate formation in the life sciences, with Zoology as major and Botany as minor — the first formal step from Rugomo toward a scholarly life.",
+    source: sources.karuVc,
+    category: "education",
+  },
+  {
+    id: "msc-1990",
+    period: "1990–1991",
+    startYear: 1990,
+    endYear: 1991,
+    title: "MSc Zoology",
+    institution: "Kenyatta University",
+    significance:
+      "Master’s research under a Kenyatta University scholarship: “Effects of dexamethasone on the antibody response and anemia in Sprague Dawley rats infected with Trypanosoma brucei brucei.”",
+    source: sources.karuVc,
+    category: "education",
+  },
+  {
+    id: "assistant-1994",
+    period: "1994–1996",
+    startYear: 1994,
+    endYear: 1996,
+    title: "Assistant Lecturer",
+    role: "Assistant Lecturer, Biological Sciences",
+    institution: "Jomo Kenyatta University of Agriculture and Technology",
+    significance:
+      "Entry into the university teaching career at JKUAT, beginning the long arc from classroom scientist to academic administrator.",
+    source: sources.karuVc,
+    category: "academic",
+  },
+  {
+    id: "phd-1996",
+    period: "1996–2000",
+    startYear: 1996,
+    endYear: 2000,
+    title: "PhD Zoology — Entomology",
+    role: "Doctoral researcher and Lecturer",
+    institution: "ICIPE / JKUAT",
+    significance:
+      "Doctoral inquiry into the bioecology of thrips in French-bean agro-ecosystems in Kenya, covering species identification, population dynamics, and indigenous natural enemies. The ICIPE record documents fieldwork at Machakos, Kaguru and JKUAT.",
+    source: sources.icipeDissertation,
+    category: "research",
+  },
+  {
+    id: "it-centre-2002",
+    period: "2002–2005",
+    startYear: 2002,
+    endYear: 2005,
+    title: "Pioneering Director, Information Technology Centre",
+    role: "Director, JKUAT IT Centre",
+    institution: "JKUAT",
+    significance:
+      "Early technology leadership: administrative and academic head of the Information Technology Centre for two terms, connecting scientific training with institutional computing.",
+    source: sources.karuVc,
+    category: "administration",
+  },
+  {
+    id: "assoc-prof-2007",
+    period: "2007",
+    startYear: 2007,
+    title: "Associate Professor of Entomology",
+    institution: "JKUAT, Department of Zoology",
+    significance:
+      "Promotion to Associate Professor of Entomology in April 2007, recognising a body of research in biological control and insect ecology.",
+    source: sources.karuVc,
+    category: "academic",
+  },
+  {
+    id: "academic-director-2008",
+    period: "2008–2010",
+    startYear: 2008,
+    endYear: 2010,
+    title: "Director of Academic Programmes",
+    institution: "JKUAT Taita Taveta Campus; Meru University College of Science and Technology",
+    significance:
+      "Pioneering Director of Academic Programmes at Taita Taveta Campus (March 2008–September 2009), then Director of Academic Programmes at MUCST, then a constituent college of JKUAT (September 2009–August 2010).",
+    source: sources.karuVc,
+    category: "administration",
+  },
+  {
+    id: "deputy-principal-2011",
+    period: "2011–2013",
+    startYear: 2011,
+    endYear: 2013,
+    title: "Deputy Principal (Planning, Finance & Administration)",
+    institution: "Karatina University College",
+    significance:
+      "Appointed Deputy Principal (PFA) on 15 August 2011. Also served as Acting Principal on various dates as the college moved toward full university status.",
+    source: sources.karuVc,
+    category: "administration",
+  },
+  {
+    id: "dvc-2013",
+    period: "2013–2023",
+    startYear: 2013,
+    endYear: 2023,
+    title: "Deputy Vice-Chancellor, Planning, Finance & Administration",
+    institution: "Karatina University",
+    significance:
+      "Acting DVC (PFA) from 1 March 2013, then substantively appointed from 8 August 2013. Responsible for budgets, performance contracting and infrastructural growth. Also served as Acting Vice-Chancellor on various dates.",
+    source: sources.karuCouncil,
+    category: "administration",
+  },
+  {
+    id: "professor-2018",
+    period: "2018–present",
+    startYear: 2018,
+    title: "Professor of Entomology",
+    institution: "Karatina University, Department of Biological Sciences",
+    significance:
+      "Full Professor of Entomology from January 2018, in the School of Pure and Applied Sciences — the scholarly rank that the boy from Rugomo had once imagined.",
+    source: sources.karuVc,
+    category: "academic",
+  },
+  {
+    id: "acting-vc-2023",
+    period: "June 2023",
+    startYear: 2023,
+    title: "Acting Vice-Chancellor",
+    institution: "Karatina University",
+    significance:
+      "On 5 June 2023, Council Chair Prof. Francis Gichaga presided over the handing over of office from outgoing Vice-Chancellor Prof. Mucai Muchiri to Prof. Gitonga as Acting Vice-Chancellor.",
+    source: sources.karuHandover,
+    category: "vc",
+  },
+  {
+    id: "vc-2023",
+    period: "September 2023",
+    startYear: 2023,
+    title: "Appointed Vice-Chancellor",
+    institution: "Karatina University",
+    significance:
+      "Appointed Vice-Chancellor on 12 September 2023. Formally inaugurated on 24 November 2023 as the University’s second Vice-Chancellor, receiving the Instruments of Authority before declaring the 11th Graduation.",
+    source: sources.karuCouncil,
+    photo: "/images/mace-ceremony.png",
+    category: "vc",
+  },
+  {
+    id: "continuing-2026",
+    period: "2026",
+    startYear: 2026,
+    title: "Continuing institutional transformation",
+    institution: "Karatina University",
+    significance:
+      "Documented work in this period includes the China / Hikvision engagement, Career Week, the first-year address on discipline and persistence, and continued emphasis on computing, research, partnerships and student development — framed as institutional, not personal, achievement.",
+    source: sources.karuChina,
+    photo: "/images/first-year-address.png",
+    category: "vc",
+  },
+];

@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
 :root {
+  --forest-900: #123524;
+  --forest-800: #174a35;
+  --forest-700: #1f5a40;
+  --forest-600: #2a6b4d;
+  --gold-600: #b9973e;
+  --gold-500: #c9a227;
+  --gold-400: #d4af37;
+  --ivory: #f8f7f2;
+  --ivory-deep: #f1efe6;
+  --charcoal: #151815;
+  --ink: #1c221e;
+  --muted: #5c655e;
+  --line: rgba(18, 53, 36, 0.12);
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #151815;
 }
 
 @theme inline {
+  --color-forest-900: var(--forest-900);
+  --color-forest-800: var(--forest-800);
+  --color-forest-700: var(--forest-700);
+  --color-forest-600: var(--forest-600);
+  --color-gold-600: var(--gold-600);
+  --color-gold-500: var(--gold-500);
+  --color-gold-400: var(--gold-400);
+  --color-ivory: var(--ivory);
+  --color-ivory-deep: var(--ivory-deep);
+  --color-charcoal: var(--charcoal);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-manrope);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01";
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-cormorant), "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.22);
+  color: var(--forest-900);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-500);
+  outline-offset: 3px;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-500), transparent);
+}
+
+.gold-rule-left {
+  height: 1px;
+  width: 4.5rem;
+  background: var(--gold-500);
+}
+
+.section-pad {
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-pad {
+    padding-inline: 4.5rem;
+  }
+}
+
+.reveal {
+  animation: rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-delay-1 { animation-delay: 0.12s; }
+.reveal-delay-2 { animation-delay: 0.24s; }
+.reveal-delay-3 { animation-delay: 0.4s; }
+.reveal-delay-4 { animation-delay: 0.56s; }
+.reveal-delay-5 { animation-delay: 0.72s; }
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes draw {
+  from { width: 0; }
+  to { width: 5rem; }
+}
+
+.draw-gold {
+  height: 1px;
+  background: var(--gold-500);
+  animation: draw 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+.scroll-cue {
+  animation: pulse-line 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal,
+  .draw-gold,
+  .scroll-cue {
+    animation: none !important;
+  }
+}
+
+.nav-compact {
+  box-shadow: 0 10px 40px rgba(18, 53, 36, 0.08);
+}
+
+.eco-dot {
+  box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.35);
+}
+
+.eco-dot[data-active="true"] {
+  box-shadow: 0 0 0 8px rgba(201, 162, 39, 0.16);
+}
+
+.blueprint {
+  background-image:
+    linear-gradient(rgba(18, 53, 36, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 53, 36, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
 }

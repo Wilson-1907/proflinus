@@ -1,0 +1,56 @@
+import { sources } from "./sources";
+
+export const networkNodes = [
+  { id: "gitonga", label: "Prof. Linus Muthuri Gitonga", type: "person" },
+  { id: "icipe", label: "ICIPE", type: "institution" },
+  { id: "jkuat", label: "JKUAT", type: "institution" },
+  { id: "karu", label: "Karatina University", type: "institution" },
+  { id: "ku", label: "Kenyatta University", type: "institution" },
+  { id: "overholt", label: "W. A. Overholt", type: "researcher" },
+  { id: "lohr", label: "B. Löhr", type: "researcher" },
+  { id: "mueke", label: "J. M. Mueke", type: "researcher" },
+  { id: "magambo", label: "J. K. Magambo", type: "researcher" },
+  { id: "niassy", label: "S. Niassy", type: "researcher" },
+  { id: "maniania", label: "N. K. Maniania", type: "researcher" },
+  { id: "ekesi", label: "S. Ekesi", type: "researcher" },
+  { id: "foba", label: "C. N. Foba", type: "researcher" },
+  { id: "thrips", label: "Thrips", type: "topic" },
+  { id: "biocontrol", label: "Biological Control", type: "topic" },
+  { id: "orius", label: "Orius albidipennis", type: "topic" },
+  { id: "metarhizium", label: "Metarhizium anisopliae", type: "topic" },
+  { id: "leafminer", label: "Liriomyza", type: "topic" },
+];
+
+export const networkEdges = [
+  { from: "gitonga", to: "icipe", reason: "GTZ scholar and doctoral research", source: sources.karuVc },
+  { from: "gitonga", to: "jkuat", reason: "PhD, lectureship and IT Centre", source: sources.karuVc },
+  { from: "gitonga", to: "karu", reason: "Professor and Vice-Chancellor", source: sources.karuVc },
+  { from: "gitonga", to: "ku", reason: "BEd and MSc", source: sources.karuVc },
+  { from: "gitonga", to: "overholt", reason: "Co-author, Biological Control 2002", source: sources.crossrefFunctional },
+  { from: "gitonga", to: "lohr", reason: "Co-author, 2002 thrips papers", source: sources.icipeThripsTemp },
+  { from: "gitonga", to: "mueke", reason: "Co-author across thrips papers", source: sources.crossrefFunctional },
+  { from: "gitonga", to: "magambo", reason: "Co-author, 2002 papers", source: sources.crossrefFunctional },
+  { from: "gitonga", to: "niassy", reason: "Co-author, Metarhizium papers 2011–2012", source: sources.scholar },
+  { from: "gitonga", to: "maniania", reason: "Co-author, fungal biocontrol papers", source: sources.scholar },
+  { from: "gitonga", to: "ekesi", reason: "Co-author, autoinoculation paper", source: sources.scholar },
+  { from: "gitonga", to: "foba", reason: "Co-author, Liriomyza papers 2015–2016", source: sources.scholar },
+  { from: "gitonga", to: "thrips", reason: "Doctoral and journal research", source: sources.icipeDissertation },
+  { from: "gitonga", to: "biocontrol", reason: "Documented specialisation", source: sources.karuVc },
+  { from: "gitonga", to: "orius", reason: "Functional-response and temperature papers", source: sources.icipeFunctional },
+  { from: "gitonga", to: "metarhizium", reason: "Collaborative fungal biocontrol papers", source: sources.scholar },
+  { from: "gitonga", to: "leafminer", reason: "Liriomyza parasitoid-complex papers", source: sources.scholar },
+  { from: "icipe", to: "thrips", reason: "Dissertation host institution", source: sources.icipeDissertation },
+];
+
+export const documentedCollaborations = [
+  { name: "ICIPE", source: sources.karuVc },
+  { name: "KARI", source: sources.karuVc },
+  { name: "Philips University, Germany", source: sources.karuVc },
+  { name: "KEMRI", source: sources.karuVc },
+  { name: "Sun Agro Biosystem Ltd, India", source: sources.karuVc },
+  { name: "JKUAT", source: sources.karuVc },
+  { name: "ITROMID", source: sources.karuVc },
+  { name: "University of Nairobi", source: sources.karuVc },
+  { name: "Egerton University", source: sources.karuVc },
+  { name: "RUFORUM / Faculty of Agriculture, JKUAT (MSc Research Methodology curriculum)", source: sources.karuVc },
+];
