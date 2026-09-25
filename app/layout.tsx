@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { ReadingProgress } from "@/components/layout/ReadingProgress";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { person } from "@/data/person";
 import { SITE_URL } from "@/lib/utils";
@@ -71,6 +73,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${cormorant.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-white text-ink">
@@ -81,9 +84,11 @@ export default function RootLayout({
           Skip to content
         </a>
         <JsonLd />
+        <ReadingProgress />
         <SiteHeader />
         <main id="main">{children}</main>
         <SiteFooter />
+        <ScrollProgress />
       </body>
     </html>
   );

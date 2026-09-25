@@ -140,11 +140,21 @@ h3,
   animation: pulse-line 2.4s ease-in-out infinite;
 }
 
+@keyframes arrow-nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.scroll-arrow {
+  animation: arrow-nudge 1.9s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal,
   .draw-gold,
-  .scroll-cue {
+  .scroll-cue,
+  .scroll-arrow {
     animation: none !important;
   }
 }

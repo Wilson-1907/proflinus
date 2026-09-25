@@ -62,11 +62,6 @@ export function HeroSection() {
           </figcaption>
         </figure>
       </div>
-
-      <div className="scroll-cue absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[10px] tracking-[0.28em] text-forest-800 uppercase">
-        <span>Scroll</span>
-        <span className="h-10 w-px bg-gold-500" aria-hidden />
-      </div>
     </section>
   );
 }

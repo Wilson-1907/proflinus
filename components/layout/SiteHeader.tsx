@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -46,7 +47,21 @@ export function SiteHeader() {
         )}
       >
         <Link href="/" className="group flex items-center gap-3">
-          <span className="h-8 w-px bg-gold-500" aria-hidden />
+          <span
+            className={cn(
+              "relative overflow-hidden rounded-full bg-ivory ring-1 ring-gold-500/80 ring-offset-2 ring-offset-white transition-all duration-500",
+              compact ? "h-9 w-9" : "h-11 w-11",
+            )}
+          >
+            <Image
+              src="/images/portrait-headshot.png"
+              alt=""
+              width={88}
+              height={88}
+              className="h-full w-full object-cover object-[50%_12%]"
+              priority
+            />
+          </span>
           <span className="leading-tight">
             <span className="block font-serif text-lg text-forest-900 md:text-xl">
               Prof. Linus Muthuri Gitonga

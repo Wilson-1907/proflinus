@@ -6,7 +6,7 @@ export function SiteFooter() {
 
   return (
     <footer className="border-t border-line bg-forest-900 text-ivory">
-      <div className="section-pad mx-auto max-w-7xl py-14">
+      <div className="section-pad mx-auto max-w-7xl py-14 pb-28">
         <p className="text-[11px] tracking-[0.28em] text-gold-400 uppercase">
           Find his work across the scholarly web
         </p>
