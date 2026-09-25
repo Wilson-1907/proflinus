@@ -70,7 +70,9 @@ export function AcademicJourney() {
           </ol>
         </div>
 
-        <article className="mt-12 grid gap-8 border border-line bg-white p-6 md:p-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <article
+          className={`mt-12 grid gap-8 border border-line bg-white p-6 md:p-10 ${current.photo ? "lg:grid-cols-[1.2fr_0.8fr]" : ""}`}
+        >
           <div>
             <p className="text-[11px] tracking-[0.22em] text-gold-600 uppercase">
               {current.period} · {current.institution}
@@ -102,12 +104,7 @@ export function AcademicJourney() {
               height={560}
               className="h-full max-h-80 w-full object-cover"
             />
-          ) : (
-            <div className="flex items-end border border-dashed border-forest-900/20 p-6 text-sm text-muted">
-              Photograph not attached to this milestone. The record stands on
-              the cited institutional source.
-            </div>
-          )}
+          ) : null}
         </article>
       </div>
     </section>
